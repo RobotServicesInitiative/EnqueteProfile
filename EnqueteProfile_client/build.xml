@@ -1,0 +1,8 @@
+<project name="fooboo" default="jar" basedir=".">
+        <tstamp><format property="now.time" pattern="yyyyMMddHHmm" /></tstamp>
+    <property name="jar.name" value="CutomProfile_EnqueteProfile_client_${now.time}.jar"/>
+	<property name="classes.dir" value="bin"/>
+	<target name="jar">
+		<jar jarfile="${jar.name}" basedir="${classes.dir}"></jar>
+	</target>
+</project>

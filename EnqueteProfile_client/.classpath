@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RSNP_Custom_Profile_library_common"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RSNP_RSi_document"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RSNP_Custom_Profile_library_client"/>
+	<classpathentry kind="lib" path="libs/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="libs/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/httpclient-4.0.jar"/>
+	<classpathentry kind="lib" path="libs/httpcore-4.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/httpmime-4.0.jar"/>
+	<classpathentry kind="lib" path="libs/RSiDocument.jar"/>
+	<classpathentry kind="lib" path="libs/rsnp-robot-api-2.3.0_r49.jar"/>
+	<classpathentry kind="lib" path="libs/rsnp-robot-fjlib-2.3.0_r49.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EnqueteProfile_common"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
