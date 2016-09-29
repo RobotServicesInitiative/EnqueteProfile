@@ -61,24 +61,29 @@ enquete_id アンケート群のID
 
 ##Robot側Invokerインターフェース
 
-* public RetValue startProfile()  
+* public RetValue startProfile()   
+  
 EnquetProfileを開始する
 
 * public RetValue endProfile()  
+  
 EnqueteProfileを終了する
 
 * public EnqueteData getEnquete(String enquete_id, String ietfLanguageTag, String responder_id)  
+  
 RobotからサービスにEnqueteDataの問い合わせを行う。  
 enquete_id:取得したいenquete_id not null  
 取得したいenquete_idの言語 not null  
 取得したいresponder_id null可  
 
 * public RetValue answerEnquete(String enquete_id, String responder_id,AnswerData answerData)  
+  
 enquete_id:回答を行ったenquete_id 回答言語はanswer_data内に内包する not null  
 responder_id:回答者 not null  
 answerData 回答データ not null  
 
 * public RetValue transferEnqueteData(String responder_id,EnqueteData enqueteData, AnswerData answerData)  
+  
 回答者が回答したenqueteDataとanswerDataのセットを、 サービスへ転送する  
 responder_id not null  
 enqueteData not null  
@@ -87,6 +92,7 @@ answerData not null
 ## Service側Invokerインターフェース
 
 * public RetValue transferEnqueteData(String responder_id, EnqueteData enqueteData, AnswerData answerData)  
+  
 使い方はRobot側と同じ 
 
 ##EnqueteDataサンプル  
