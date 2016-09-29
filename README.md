@@ -61,10 +61,10 @@ enquete_id アンケート群のID
 
 ##Robot側Invokerインターフェース
 
-* public RetValue startProfile()
+* public RetValue startProfile()  
 EnquetProfileを開始する
 
-* public RetValue endProfile()
+* public RetValue endProfile()  
 EnqueteProfileを終了する
 
 * public EnqueteData getEnquete(String enquete_id, String ietfLanguageTag, String responder_id)  
