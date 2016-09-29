@@ -8,34 +8,38 @@
 
 ##プロファイルの説明
 
-各値の説明
+####各値の説明
 
-enquete_id
-アンケート群の固有ID
+* enquete_id  
+アンケート群の固有ID  
 
-ietfLanguageTag アンケートIDに付随する設問の言語
-enquete_idに対して1:Nになる
-https://ja.wikipedia.org/wiki/IETF%E8%A8%80%E8%AA%9E%E3%82%BF%E3%82%B0を参照
-例
-ja 日本語
-en 英語
-ja-jp 日本で使われている日本語
-en-us USAで使われている英語
-en-uk イギリスで使われている英語
+* ietfLanguageTag  
+アンケートIDに付随する設問の言語  
+enquete_idに対して1:Nになる  
+<https://ja.wikipedia.org/wiki/IETF%E8%A8%80%E8%AA%9E%E3%82%BF%E3%82%B0>を参照  
+例  
+ja 日本語  
+en 英語  
+ja-jp 日本で使われている日本語  
+en-us USAで使われている英語  
+en-uk イギリスで使われている英語  
 
-question_id アンケートに付随するそれぞれの問に該当するid
-enquete_idとquestion_idは1:Nになる
+* question_id  
+アンケートに付随するそれぞれの問に該当するid  
+enquete_idとquestion_idは1:Nになる  
 
-answer_id question_idに対して回答可能な選択式回答のid question_idに対して1:Nになる
+* answer_id  
+question_idに対して回答可能な選択式回答のid question_idに対して1:Nになる  
 
-responder_id 回答者が誰か識別するためのid このidはRSNP上規約があるわけではないため、プロファイル使用者側で仕様を決定する必要がある。
+* responder_id  
+回答者が誰か識別するためのid このidはRSNP上規約があるわけではないため、プロファイル使用者側で仕様を決定する必要がある。  
 
-日付について
-形式: yyyy-MM-dd hh:mm:ss.SSS z
-例:
-2016-09-29 17:02:48.504 JST
+* 日付について  
+形式: yyyy-MM-dd hh:mm:ss.SSS z  
+例:  
+2016-09-29 17:02:48.504 JST  
 
-EnqueteDataの基本構造
+***EnqueteDataの基本構造
 
 enquete_id アンケート群のID
 →ietfLanguageTag アンケート群の言語、複数言語存在する場合もある
