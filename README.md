@@ -8,6 +8,8 @@
 
 ##プロファイルの説明
 
+###enquete_id アンケート群のID  
+
 ####各値の説明
 
 * enquete_id  
@@ -39,9 +41,8 @@ question_idに対して回答可能な選択式回答のid question_idに対し�
 例:  
 2016-09-29 17:02:48.504 JST  
 
-###EnqueteDataの基本構造
+###EnqueteDataの基本構造  
 
-##enquete_id アンケート群のID  
 →ietfLanguageTag アンケート群の言語、複数言語存在する場合もある  
 →question_id アンケート群の設問１  
 →→answer_id　設問1の選択肢1  
