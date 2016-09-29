@@ -12,6 +12,7 @@ public class CreateAnswerXMLMain {
 		AnswerData answerData = new AnswerData();
 
 		answerData.setEnquete_id("enquete_id");
+
 		answerData.setIetf_language_tag("ja");
 		answerData.setStart_answer_data_date(new Date());
 
