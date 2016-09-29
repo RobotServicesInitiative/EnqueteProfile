@@ -39,20 +39,20 @@ question_idに対して回答可能な選択式回答のid question_idに対し�
 例:  
 2016-09-29 17:02:48.504 JST  
 
-***EnqueteDataの基本構造
+###EnqueteDataの基本構造
 
-enquete_id アンケート群のID
-→ietfLanguageTag アンケート群の言語、複数言語存在する場合もある
-→question_id アンケート群の設問１
-→→answer_id　設問1の選択肢1
-→→answer_id 設問1の選択肢2
-→→answer_id 設問1の選択肢3
-→question_id 設問2
-→→answer_id 設問2の選択肢1
-→→answer_id 設問2の選択肢2
-→→answer_id 設問2の選択肢3
+##enquete_id アンケート群のID  
+→ietfLanguageTag アンケート群の言語、複数言語存在する場合もある  
+→question_id アンケート群の設問１  
+→→answer_id　設問1の選択肢1  
+→→answer_id 設問1の選択肢2  
+→→answer_id 設問1の選択肢3  
+→question_id 設問2  
+→→answer_id 設問2の選択肢1  
+→→answer_id 設問2の選択肢2  
+→→answer_id 設問2の選択肢3  
 
-AnswerDataの基本構造
+##AnswerDataの基本構造  
 
 enquete_id アンケート群のID
 →ietfLanguageTag アンケート群の回答言語
@@ -167,44 +167,45 @@ EnqueteDataサンプル
        <before_enquete_annotation>アンケート前注釈</before_enquete_annotation>
        <after_enquete_annotation>アンケート後注釈</after_enquete_annotation>
     </enqueteData>
+
 AnswerDataサンプル
 
 
-<answerData>
-   <enquete_id>enquete_id</enquete_id>
-   <ietf_language_tag>ja</ietf_language_tag>
-   <answer_list class="java.util.ArrayList">
-      <answer>
-         <question_id>question_1</question_id>
-         <answer_block>
-            <answer_id>question_1_answer_3</answer_id>
-            <next_question_id>question_2</next_question_id>
-            <answer_string>question_1_アンサー_3</answer_string>
-         </answer_block>
-         <start_answer_date>2016-09-29 17:02:48.503 JST</start_answer_date>
-         <end_answer_date>2016-09-29 17:02:48.504 JST</end_answer_date>
-      </answer>
-      <answer>
-         <question_id>question_2</question_id>
-         <answer_block>
-            <answer_id>question_2_answer_2</answer_id>
-            <next_question_id>question_3</next_question_id>
-            <answer_string>question_1_アンサー_2</answer_string>
-         </answer_block>
-         <start_answer_date>2016-09-29 17:02:48.504 JST</start_answer_date>
-         <end_answer_date>2016-09-29 17:02:48.504 JST</end_answer_date>
-      </answer>
-      <answer>
-         <question_id>question_3</question_id>
-         <answer_block>
-            <answer_id>question_3_answer_1</answer_id>
-            <next_enquete_id>enquete_12</next_enquete_id>
-            <answer_string>question_1_アンサー_1</answer_string>
-         </answer_block>
-         <start_answer_date>2016-09-29 17:02:48.504 JST</start_answer_date>
-         <end_answer_date>2016-09-29 17:02:48.504 JST</end_answer_date>
-      </answer>
-   </answer_list>
-   <start_answer_data_date>2016-09-29 17:02:48.502 JST</start_answer_data_date>
-   <end_answer_data_date>2016-09-29 17:02:48.504 JST</end_answer_data_date>
-</answerData>
+    <answerData>
+       <enquete_id>enquete_id</enquete_id>
+       <ietf_language_tag>ja</ietf_language_tag>
+       <answer_list class="java.util.ArrayList">
+          <answer>
+             <question_id>question_1</question_id>
+             <answer_block>
+                <answer_id>question_1_answer_3</answer_id>
+                <next_question_id>question_2</next_question_id>
+                <answer_string>question_1_アンサー_3</answer_string>
+             </answer_block>
+             <start_answer_date>2016-09-29 17:02:48.503 JST</start_answer_date>
+             <end_answer_date>2016-09-29 17:02:48.504 JST</end_answer_date>
+          </answer>
+          <answer>
+             <question_id>question_2</question_id>
+             <answer_block>
+                <answer_id>question_2_answer_2</answer_id>
+                <next_question_id>question_3</next_question_id>
+                <answer_string>question_1_アンサー_2</answer_string>
+             </answer_block>
+             <start_answer_date>2016-09-29 17:02:48.504 JST</start_answer_date>
+             <end_answer_date>2016-09-29 17:02:48.504 JST</end_answer_date>
+          </answer>
+          <answer>
+             <question_id>question_3</question_id>
+             <answer_block>
+                <answer_id>question_3_answer_1</answer_id>
+                <next_enquete_id>enquete_12</next_enquete_id>
+                <answer_string>question_1_アンサー_1</answer_string>
+             </answer_block>
+             <start_answer_date>2016-09-29 17:02:48.504 JST</start_answer_date>
+             <end_answer_date>2016-09-29 17:02:48.504 JST</end_answer_date>
+          </answer>
+       </answer_list>
+       <start_answer_data_date>2016-09-29 17:02:48.502 JST</start_answer_data_date>
+       <end_answer_data_date>2016-09-29 17:02:48.504 JST</end_answer_data_date>
+    </answerData>
