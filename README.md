@@ -54,38 +54,38 @@ question_idに対して回答可能な選択式回答のid question_idに対し�
 
 ##AnswerDataの基本構造  
 
-enquete_id アンケート群のID
-→ietfLanguageTag アンケート群の回答言語
-→question_id アンケート群の設問１
-→→answer_id　設問1回答
-→question_id 設問2
-→→answer_id 設問2の回答
+enquete_id アンケート群のID  
+→ietfLanguageTag アンケート群の回答言語  
+→question_id アンケート群の設問１  
+→→answer_id　設問1回答  
+→question_id 設問2  
+→→answer_id 設問2の回答  
 
-Robot側Invokerインターフェース
+##Robot側Invokerインターフェース
 
-public EnqueteData getEnquete(String enquete_id, String ietfLanguageTag, String responder_id)
-RobotからサービスにEnqueteDataの問い合わせを行う。
-enquete_id:取得したいenquete_id not null
-取得したいenquete_idの言語 not null
-取得したいresponder_id null可
+* public EnqueteData getEnquete(String enquete_id, String ietfLanguageTag, String responder_id)  
+RobotからサービスにEnqueteDataの問い合わせを行う。  
+enquete_id:取得したいenquete_id not null  
+取得したいenquete_idの言語 not null  
+取得したいresponder_id null可  
 
-public RetValue answerEnquete(String enquete_id, String responder_id,AnswerData answerData)
-enquete_id:回答を行ったenquete_id 回答言語はanswer_data内に内包する not null
-responder_id:回答者 not null
-answerData 回答データ not null
+* public RetValue answerEnquete(String enquete_id, String responder_id,AnswerData answerData)  
+enquete_id:回答を行ったenquete_id 回答言語はanswer_data内に内包する not null  
+responder_id:回答者 not null  
+answerData 回答データ not null  
 
-public RetValue transferEnqueteData(String responder_id,EnqueteData enqueteData, AnswerData answerData)
-回答者が回答したenqueteDataとanswerDataのセットを、 サービスへ転送する
-responder_id not null
-enqueteData not null
-answerData not null
+* public RetValue transferEnqueteData(String responder_id,EnqueteData enqueteData, AnswerData answerData)  
+回答者が回答したenqueteDataとanswerDataのセットを、 サービスへ転送する  
+responder_id not null  
+enqueteData not null  
+answerData not null  
 
-Service側Invokerインターフェース
+## Service側Invokerインターフェース
 
-public RetValue transferEnqueteData(String responder_id, EnqueteData enqueteData, AnswerData answerData)
-使い方はRobot側と同じ
-EnqueteDataサンプル
+* public RetValue transferEnqueteData(String responder_id, EnqueteData enqueteData, AnswerData answerData)  
+使い方はRobot側と同じ 
 
+##EnqueteDataサンプル  
 
     <enqueteData>
        <enquete_id>enquete_1</enquete_id>
@@ -168,7 +168,7 @@ EnqueteDataサンプル
        <after_enquete_annotation>アンケート後注釈</after_enquete_annotation>
     </enqueteData>
 
-AnswerDataサンプル
+##AnswerDataサンプル
 
 
     <answerData>
