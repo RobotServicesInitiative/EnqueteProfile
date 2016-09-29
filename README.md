@@ -8,7 +8,8 @@
 
 ##プロファイルの説明
 
-###enquete_id アンケート群のID  
+###Profileで用いる各値の説明
+
 * enquete_id  
 アンケート群の固有ID  
 
@@ -40,6 +41,7 @@ question_idに対して回答可能な選択式回答のid question_idに対し�
 
 ###EnqueteDataの基本構造  
 
+enquete_id アンケート群のID  
 →ietfLanguageTag アンケート群の言語、複数言語存在する場合もある  
 →question_id アンケート群の設問１  
 →→answer_id　設問1の選択肢1  
