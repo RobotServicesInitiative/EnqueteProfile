@@ -7,6 +7,10 @@
 <https://github.com/RobotServicesInitiative/EnqueteProfile/blob/master/EnqueteProfile_service/CutomProfile_EnqueteProfile_service_201609232121.jar>
 
 ##プロファイルの説明
+  
+ロボットの要求を元に、アンケートをロボットに配信し、(getEnquete)  
+ロボットから回答をサービスに送信できるプロファイル (answerEnquete)  
+各ロボット・サービス間でのアンケート・回答転送も可能(transferEnqueteData)  
 
 ###Profileで用いる各値の説明
 
