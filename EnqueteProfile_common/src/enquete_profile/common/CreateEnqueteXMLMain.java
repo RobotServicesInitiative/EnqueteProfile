@@ -3,10 +3,6 @@ import java.util.ArrayList;
 
 import org.robotservices.custom_profile.lib.common.util.XMLUtil;
 
-import enquete_profile.common.AnswerBlock;
-import enquete_profile.common.Enquete;
-import enquete_profile.common.EnqueteData;
-
 
 public class CreateEnqueteXMLMain {
 

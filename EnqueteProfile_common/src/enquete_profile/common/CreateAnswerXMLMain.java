@@ -22,6 +22,7 @@ public class CreateAnswerXMLMain {
 		answerData.getAnswer_list().add(createAnswer("question_2","question_2_answer_2","question_1_アンサー_2",null,"question_3"));
 		answerData.getAnswer_list().add(createAnswer("question_3","question_3_answer_1","question_1_アンサー_1","enquete_12",null));
 
+		stop();
 		answerData.setEnd_answer_data_date(new Date());
 
 		String xml = XMLUtil.marshal(answerData);
@@ -48,4 +49,13 @@ public class CreateAnswerXMLMain {
 		return answer;
 	}
 
+
+	private static void stop() {
+		try {
+			Thread.sleep(50);
+		} catch (InterruptedException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+	}
 }
