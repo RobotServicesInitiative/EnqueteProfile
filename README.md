@@ -8,6 +8,8 @@
 
 ##プロファイルの説明
   
+![2016-09-29 19 39 42](https://cloud.githubusercontent.com/assets/22492264/18979053/bb0d7924-8702-11e6-92a6-5bce7765bee3.png)
+
 ロボットの要求を元に、アンケートをロボットに配信し、(getEnquete)  
 ロボットから回答をサービスに送信できるプロファイル (answerEnquete)  
 各ロボット・サービス間でのアンケート・回答転送も可能(transferEnqueteData)  
