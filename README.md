@@ -4,7 +4,7 @@
 
 <https://github.com/RobotServicesInitiative/EnqueteProfile/blob/master/EnqueteProfile_service/CutomProfile_EnqueteProfile_service_201609232121.jar>
 <https://github.com/RobotServicesInitiative/EnqueteProfile/blob/master/EnqueteProfile_common/CutomProfile_EnqueteProfile_common_201609271538.jar>
-<https://github.com/RobotServicesInitiative/EnqueteProfile/blob/master/EnqueteProfile_service/CutomProfile_EnqueteProfile_service_201609232121.jar>
+<https://github.com/RobotServicesInitiative/EnqueteProfile/blob/master/EnqueteProfile_client/CutomProfile_EnqueteProfile_client_201609232121.jar>
 
 ##プロファイルの説明
   
